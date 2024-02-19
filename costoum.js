@@ -14,8 +14,15 @@ let dowen = 24;
 let count = 0;
 for(const button of btn){
   button.addEventListener("click",function(){ 
+
+    let chack = document.getElementById("spn").innerText;
+    if(chack>3){
+      return alert("invalid")
+    }
     count += 1;
     dowen -= 1;
+
+    button.disabled = true;
     button.style.backgroundColor="green";
     button.classList.add("disabled:");
     
