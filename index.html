@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assinment-5</title>
+    <!-- link css -->
+ 
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+.benar{
+    background-image:url("images/banner.png");
+}
+</style>
+</head>
+
+<body>
+<header>
+<nav class="container mx-auto justify-around">
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+         
+          </div>
+          <a class="btn btn-ghost text-xl">P.H Paribahan</a>
+        </div>
+
+        <div class="navbar-center lg:flex">
+          <ul class="menu menu-horizontal px-1 space-x-4">
+            <li>Home</li>
+            <li>contact</li>
+            <li>Destinatio</li>
+            <li>Search</li>
+        </div>
+
+        <div class="navbar-end ">
+          <a class="btn text-lime-500">bus<span><img src="images/bus-icon.png" alt=""></span></a> 
+        </div>
+      </div>
+</nav>
+</header>
+<main>
+  <section id="benar">
+    <!-- benar -->
+    <section class="benar bg-no-repeat  space-y-24 pt-12 mx-auto container">
+        <p class="text-5xl text-white text-center">End-to-End Travel with <br><span class="text-green-500 pt-5 font-serif">P Paribahan</span> </p>
+
+        <p class=" font-serif text-xl text-center text-white">Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
+        <div  class="pb-16 flex justify-center">
+            <button onclick="playMove()" class="btn btn-success ">bus Tickets</button>
+        </div>
+    </section>
+    <section>
+
+    <p class="text-center font-serif text-5xl my-16">Best offers for you</p>
+    <div class="flex justify-center gap-10 ">
+
+        <div class="flex bg-amber-200 p-8 gap-x-7 rounded-2xl">
+          <div>
+                <p class="text-3xl font-bold">15% OFF</p>
+                <p class="ffont-semibold">on your next purchaseF</p>
+                <p>use by January 2024</p>
+          </div>
+          <div>
+                <p  class="font-bold">NEW15</p>
+                <p>Coupon Code</p>
+          </div>
+        </div>
+        <div class="flex bg-red-200 p-8 gap-x-7 rounded-2xl">
+            <div>
+                <p class="text-3xl font-bold">20% OFF</p>
+                <p class="ffont-semibold">on your next purchaseF</p>
+                <p>use by January 2024</p>
+            </div>
+            <div>
+                <p class="font-bold">Couple 20</p>
+                <p>Coupon Code</p>
+            </div>
+        </div> 
+    </div>
+
+    <div class="flex justify-center ">
+      <button class="btn btn-outline btn-accent my-16">See All Offers</button>
+    </div>
+    </section>
+  </section>
+
+<!-- power of main section  -->
+<section id="addEliment" class="bg-slate-200 rounded-t-3xl hidden ">
+
+    <h3 class="text-5xl text-center font-serif py-5">P.H Paribahan</h3>
+    <p class="text-center text-2xl pb-8 my-10">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .
+    </p>
+
+
+  <div class=" mx-auto container flex justify-between">
+
+    <div>
+      <div class="flex justify-between">
+        <div class="flex items-center">
+          <img src="images/bus-logo.png" alt="">
+          <p>Greenline Paribahan</p>
+        </div>
+        <div>
+          <div class="navbar-end flex ml-96">
+            <a class="btn text-lime-500"><span><img src="images/seat-green.png" alt=""></span> Seats left <span id="costed">24</span> </a> 
+          </div>
+        </div>
+      </div>
+      <!-- ne -->
+      <div class="bg-slate-300 rounded-2xl p-12 space-y-5">
+        <div class="flex justify-between">
+          <p>Route</p>
+          <p>Dhaka - Sylhet</p>
+        </div>
+        <p class="border-b-2 border-dashed"></p>
+        <div class="flex justify-between" >
+          <p>Departure Time</p>
+          <p>9:00 PM</p>
+        </div>
+        <p class="border-t-2 border-dashed"></p>
+      </div>
+
+    </div>
+
+    <div class="p-24 ">
+      <img src="images/fare.png" alt="">
+      <p class="text-3xl border-t-2 border-dashed"> <span id="porero1"> 550 </span>Taka</p>
+      <p class="border-t-2 border-dashed"></p>
+      <p class="text-2xl">Per Seat</p>
+
+    </div>
+  </div>
+
+  <!-- to none -->
+
+
+  <div class=" bg-white container mx-auto flex justify-between p-7 rounded-2xl ">
+    <div>
+      <p class="pb-6">Select Your Seat</p>
+      <div class=" flex  container mx-auto">
+        <div class="flex ">
+          <img src="images/seat-gray.png" alt="">
+          <p>Available</p>
+        </div>
+        <div class="flex ml-80">
+          <img src="images/seat-green.png" alt="">
+          <p>Selected</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-5 gap-5 py-10">
+  <button class=" text-center rounded-lg   py4">A</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px ">A1</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">A2</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">A3</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">A4</button>
+
+  <button class=" text-center rounded-lg   py4">B</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">B1</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">B2</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">B3</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">B4</button>
+
+  <button class=" text-center rounded-lg   py4">C</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">C1</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">C2</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">C3</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">C4</button>
+
+  <button class=" text-center rounded-lg   py4">D</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">D1</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">D2</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">D3</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">D4</button>
+
+  <button class=" text-center rounded-lg   py4">E</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">E1</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">E2</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">E3</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">E4</button>
+
+  <button class=" text-center rounded-lg   py4">G</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">G1</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">G2</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">G3</button>
+  <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">G4</button>
+
+</div>
+    </div>
+        <!-- left  -->
+    <div class="bg-slate-100 p-10 rounded-xl">
+      <p class="pb-6">Select Your Seat</p>
+      <div class="flex justify-around items-center space-x-10">
+        <p>Seat <span id="spn" class="text-3xl text-green-500">0</span>  </p>
+        <p>Class</p>
+        <p>Price</p>
+      </div>
+
+      <p class="border-t-2 border-dashed"></p><br>
+
+      <p class="border-t-2 border-dashed"></p>
+
+      <div class="flex justify-between py-8">
+        <p class="font-semibold">price</p>
+        <p class="font-semibold"> BDT <span id="setpone">0</span></p>
+      </div>
+
+      <div class="flex">
+        <input type="text" placeholder="Have any copupon?">
+       <button class="bg-lime-500 p-2 rounded-md">Apply</button>
+      </div>
+
+      <div class="flex justify-between py-8">
+        <p class="font-semibold">Grand Tota</p>
+        <p class="font-semibold"> BDT <span id="grand" class="">0</span></p>
+      </div>
+
+
+      <p class="pb-6 pt-4">Passenger Name*</p>
+      <input class="text-xl" type="text" placeholder="Enter your name">
+
+      <p class="pb-6 pt-4">Phone Number*</p>
+      <input class="text-xl" type="number" name="" id="" placeholder="Enter your phone number">
+
+      <p class="pb-6 pt-4">Email ID</p>
+      <input class="text-xl" type="email" name="" id="" placeholder="Enter your email id">
+      <br>
+      
+      <button class="bg-lime-500 w-full mt-6 text-2xl rounded-md">Next</button>
+
+    </div>
+
+  </div>
+
+
+
+
+</section>
+</main>
+
+<footer>
+
+</footer>
+<script src="costoum.js"></script>
+</body>
+</html>
