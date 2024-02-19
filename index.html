@@ -12,6 +12,13 @@
 .benar{
     background-image:url("images/banner.png");
 }
+
+
+li{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
 </style>
 </head>
 
@@ -43,7 +50,7 @@
       </div>
 </nav>
 </header>
-<main>
+<main id="main">
   <section id="benar">
     <!-- benar -->
     <section class="benar bg-no-repeat  space-y-24 pt-12 mx-auto container">
@@ -131,7 +138,7 @@
       <img src="images/fare.png" alt="">
       <p class="text-3xl border-t-2 border-dashed"> <span id="porero1"> 550 </span>Taka</p>
       <p class="border-t-2 border-dashed"></p>
-      <p class="text-2xl">Per Seat</p>
+      <p class="text-2xl">Per Seat <span>Economik</span></p>
 
     </div>
   </div>
@@ -190,7 +197,7 @@
   <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">G3</button>
   <button class=" bnt text-center rounded-lg  bg-slate-200 py-3 px">G4</button>
 
-</div>
+  </div>
     </div>
         <!-- left  -->
     <div class="bg-slate-100 p-10 rounded-xl">
@@ -202,6 +209,9 @@
       </div>
 
       <p class="border-t-2 border-dashed"></p><br>
+      <ul class="selected-place" id="selected-place-containr">
+
+      </ul>
       <p class="border-t-2 border-dashed"></p>
 
       <div class="flex justify-between py-8">
@@ -230,7 +240,7 @@
       <input class="text-xl" type="email" name="" id="" placeholder="Enter your email id">
       <br>
       
-      <button class="bg-lime-500 w-full mt-6 text-2xl rounded-md">Next</button>
+      <button onclick="sussessly()" class="bg-lime-500 w-full mt-6 text-2xl rounded-md">Next</button>
 
     </div>
 
@@ -242,8 +252,19 @@
 </section>
 </main>
 
-<footer>
+<footer id="sussess" class="bg-slate-200 hidden">
+  <section class="w-2/4 bg-white mx-auto justify-center  rounded-xl my-10">
+      <div class="text-center">
 
+        <img class="ml-72 pt-9 " src="images/success.png" alt="">
+        <h1 class="text-5xl text-lime-400">SUCCESS</h1>
+
+        <p class="text-3xl pt-11 font-serif ">Thank you for Booking Our Bus Seats. <br>
+          We are working hard to find the best service and deals for you.</p>
+          <p class="text-xl pb-10">Shortly you will find a confirmation in your email.</p>
+          <button class="btn btn-success">Continue</button>
+      </div>
+  </section>
 </footer>
 <script src="costoum.js"></script>
 </body>
