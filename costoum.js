@@ -33,7 +33,7 @@ for(let button of btn){
 
 
     let sit = event.target.innerText;
-    
+
     let tk = event.target.parentNode.parentNode.parentNode.parentNode.childNodes[5].childNodes[3].childNodes[3].childNodes[1].innerText;
 
     let Ekonommik = event.target.parentNode.parentNode.parentNode.parentNode.childNodes[5].childNodes[3].childNodes[7].childNodes[1].innerText;
@@ -49,7 +49,6 @@ for(let button of btn){
     p2.innerText = Ekonommik;
     const p3 = document.createElement("p");
     p3.innerText = tk;
-
     li.appendChild(p);
     li.appendChild(p2);
     li.appendChild(p3);
